@@ -16,6 +16,7 @@ namespace VPLab3
         {
             InitializeComponent();
         }
+
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
@@ -23,8 +24,16 @@ namespace VPLab3
 
             if (username == GlobalVariables.Username && password == GlobalVariables.Password)
             {
-                
+                WelcomeForm welcomeForm = new WelcomeForm();
+                welcomeForm.FormClosed += WelcomForm_FormClosed;
+                this.Hide();
+                welcomeForm.Show();
             }
+        }
+
+        private void WelcomForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
