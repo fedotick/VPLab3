@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.txtWelcom = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.Label();
             this.btnOk = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@
             this.txtWelcom.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtWelcom.AutoSize = true;
             this.txtWelcom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtWelcom.Location = new System.Drawing.Point(59, 31);
+            this.txtWelcom.Location = new System.Drawing.Point(62, 37);
             this.txtWelcom.Name = "txtWelcom";
             this.txtWelcom.Size = new System.Drawing.Size(46, 13);
             this.txtWelcom.TabIndex = 0;
@@ -48,7 +49,7 @@
             // txtUsername
             // 
             this.txtUsername.AutoSize = true;
-            this.txtUsername.Location = new System.Drawing.Point(59, 44);
+            this.txtUsername.Location = new System.Drawing.Point(62, 50);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(55, 13);
             this.txtUsername.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(48, 91);
+            this.btnOk.Location = new System.Drawing.Point(54, 89);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 2;
@@ -74,6 +75,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtWelcom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
