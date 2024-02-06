@@ -32,6 +32,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.linkLabelRegistration = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -69,11 +70,23 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // linkLabelRegistration
+            // 
+            this.linkLabelRegistration.AutoSize = true;
+            this.linkLabelRegistration.Location = new System.Drawing.Point(361, 286);
+            this.linkLabelRegistration.Name = "linkLabelRegistration";
+            this.linkLabelRegistration.Size = new System.Drawing.Size(63, 13);
+            this.linkLabelRegistration.TabIndex = 3;
+            this.linkLabelRegistration.TabStop = true;
+            this.linkLabelRegistration.Text = "Registration";
+            this.linkLabelRegistration.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRegistration_LinkClicked);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.linkLabelRegistration);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.txtPassword);
@@ -91,6 +104,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.LinkLabel linkLabelRegistration;
     }
 }
 

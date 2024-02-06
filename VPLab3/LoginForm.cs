@@ -25,13 +25,13 @@ namespace VPLab3
             if (username == GlobalVariables.Username && password == GlobalVariables.Password)
             {
                 WelcomeForm welcomeForm = new WelcomeForm();
-                welcomeForm.FormClosed += WelcomForm_FormClosed;
+                welcomeForm.FormClosed += AnotherForm_FormClosed;
                 this.Hide();
                 welcomeForm.Show();
             }
         }
 
-        private void WelcomForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void AnotherForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
         }
@@ -40,6 +40,20 @@ namespace VPLab3
         {
             txtUsername.Text = "";
             txtPassword.Text = "";
+        }
+
+        private void linkLabelRegistration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegistrationForm registrationForm = new RegistrationForm(this);
+            registrationForm.FormClosed += AnotherForm_FormClosed;
+            this.Hide(); 
+            registrationForm.Show();
+        }
+
+        internal void SetCredentials(string username, string password)
+        {
+            txtUsername.Text = username;
+            txtPassword.Text = password;
         }
     }
 }

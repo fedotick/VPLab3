@@ -10,3 +10,4 @@ C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Pr
 C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\Lab3\VPLab3\VPLab3\obj\Debug\VPLab3.exe
 C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\Lab3\VPLab3\VPLab3\obj\Debug\VPLab3.pdb
 C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\Lab3\VPLab3\VPLab3\obj\Debug\VPLab3.WelcomeForm.resources
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\Lab3\VPLab3\VPLab3\obj\Debug\VPLab3.RegistrationForm.resources
